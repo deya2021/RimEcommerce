@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RegisterActivity">
+<androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+   <ImageView
+        android:id="@+id/register_applogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/applogo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right1"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    
+		<EditText
+        android:id="@+id/register_username_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/et_bg"
+        android:hint="الاسم"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right1"
+        app:layout_constraintStart_toStartOf="@id/guideline_left1"
+        app:layout_constraintTop_toBottomOf="@+id/register_applogo"
+        android:autofillHints="" />
+
+    
+		<EditText
+        android:id="@+id/register_phone_number_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/et_bg"
+        android:drawableEnd="@drawable/ic_eye"
+        android:hint="رقم الهاتف"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right1"
+        app:layout_constraintStart_toStartOf="@id/guideline_left1"
+        app:layout_constraintTop_toBottomOf="@+id/register_username_input"
+        android:autofillHints="" />
+
+
+    
+		<EditText
+        android:id="@+id/register_password_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/et_bg"
+        android:drawableEnd="@drawable/ic_eye"
+        android:hint="كلمة السر"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right1"
+        app:layout_constraintStart_toStartOf="@id/guideline_left1"
+        app:layout_constraintTop_toBottomOf="@+id/register_phone_number_input"
+        android:autofillHints="" />
+
+
+		<Button
+        android:id="@+id/register_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_bg"
+        android:text="انشاء حساب"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right1"
+        app:layout_constraintStart_toStartOf="@id/guideline_left1"
+        app:layout_constraintTop_toBottomOf="@+id/register_password_input"
+        android:autofillHints="" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

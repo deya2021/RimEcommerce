@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:layout_marginStart="@dimen/_15sdp"
+    android:layout_marginEnd="@dimen/_15sdp"
+    app:cardElevation="@dimen/_15sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    tools:context=".Admin.AdminMaintainProductsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:id="@+id/product_image_maintain"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/_2sdp"
+            />
+        <EditText
+            android:id="@+id/product_name_maintain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_image_maintain"
+            android:hint="اسم المنتج"
+            android:textAlignment="center"
+            android:textSize="@dimen/_18ssp"
+            android:background="@drawable/inputs"
+            android:padding="@dimen/_12sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <EditText
+            android:id="@+id/product_price_maintain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_name_maintain"
+            android:hint="سعر المنتج"
+            android:textAlignment="center"
+            android:textSize="@dimen/_18ssp"
+            android:background="@drawable/inputs"
+            android:padding="@dimen/_12sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <EditText
+            android:id="@+id/product_description_maintain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_price_maintain"
+            android:hint="وصف المنتج"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textAlignment="center"
+            android:textSize="@dimen/_16ssp"
+            android:background="@drawable/inputs"
+            android:padding="@dimen/_12sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <Button
+            android:id="@+id/apply_change_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_description_maintain"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/buttons"
+            android:padding="@dimen/_12sdp"
+            android:text="تطبيف التغييرات"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+
+        <Button
+            android:id="@+id/delete_product_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/apply_change_btn"
+            android:text="حذف المنتج"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:textAlignment="center"
+            android:textSize="@dimen/_16ssp"
+            android:background="@drawable/buttons"
+            android:padding="@dimen/_12sdp"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

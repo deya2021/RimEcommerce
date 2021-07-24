@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+
+<RelativeLayout
+    android:id="@+id/rll1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:background="@color/colorPrimaryDark"
+    android:layout_alignParentTop="true"
+    >
+<TextView
+    android:id="@+id/total_price"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="السعر الاجمالي  "
+    android:textSize="@dimen/_20ssp"
+    android:textAlignment="center"
+    android:layout_marginTop="@dimen/_10sdp"
+    />
+
+</RelativeLayout>
+    <TextView
+        android:id="@+id/msg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:text="تهانينا .. لقد تم استلام طلبكم"
+        android:textSize="@dimen/_20ssp"
+        android:visibility="gone"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cart_list"
+        android:layout_below="@+id/rll1"/>
+    <Button
+        android:id="@+id/next_process_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="التالي"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        android:layout_margin="@dimen/_10sdp"
+
+        />
+
+</RelativeLayout>

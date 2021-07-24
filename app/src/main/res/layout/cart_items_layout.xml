@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_10sdp"
+    app:cardElevation="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/cart_product_name"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="wrap_content"
+        android:text="اسم المنتج"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:textStyle="bold"
+        />
+
+        <TextView
+            android:id="@+id/cart_product_quantity"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:text="الكمية"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/cart_product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="سعر المنتج"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            android:layout_below="@+id/cart_product_quantity"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
